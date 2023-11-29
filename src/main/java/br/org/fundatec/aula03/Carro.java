@@ -1,9 +1,14 @@
 package br.org.fundatec.aula03;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
+@Entity
 public class Carro {
 
+    @Id
     private Cor cor;
     private  String placa;
     private Integer ano;
