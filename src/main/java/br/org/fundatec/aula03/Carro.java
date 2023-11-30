@@ -1,19 +1,27 @@
 package br.org.fundatec.aula03;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import org.hibernate.Length;
 
 import java.util.Objects;
+import java.util.logging.Level;
 
 @Entity
 public class Carro {
 
     @Id
-    private Cor cor;
+    @Column(length = 8)
     private  String placa;
-    private Integer ano;
 
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private Cor cor;
+
+
+    @Column(length = 200)
     private  String marca;
+
+    private Integer ano;
 
     public Cor getCor() {
         return cor;
