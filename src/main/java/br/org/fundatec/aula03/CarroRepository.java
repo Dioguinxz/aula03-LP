@@ -1,14 +1,7 @@
 package br.org.fundatec.aula03;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface CarroRepository {
+public interface CarroRepository extends JpaRepository<Carro, String> {
 
-    List<Carro> listAllCarros();
-
-    void saveCarro(Carro carro);
-
-    void deleteCarro(String placa);
-
-    void editCarro(String codigoPlaca, Carro carro);
 }
