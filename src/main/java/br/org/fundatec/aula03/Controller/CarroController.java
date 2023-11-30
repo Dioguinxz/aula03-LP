@@ -1,5 +1,7 @@
-package br.org.fundatec.aula03;
+package br.org.fundatec.aula03.Controller;
 
+import br.org.fundatec.aula03.Model.Carro;
+import br.org.fundatec.aula03.Service.CarroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

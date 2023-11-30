@@ -1,10 +1,8 @@
-package br.org.fundatec.aula03;
+package br.org.fundatec.aula03.Model;
 
 import jakarta.persistence.*;
-import org.hibernate.Length;
 
 import java.util.Objects;
-import java.util.logging.Level;
 
 @Entity
 public class Carro {

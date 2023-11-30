@@ -1,6 +1,8 @@
-package br.org.fundatec.aula03;
+package br.org.fundatec.aula03.Service;
 
 
+import br.org.fundatec.aula03.Model.Carro;
+import br.org.fundatec.aula03.Repository.CarroRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
