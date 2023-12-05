@@ -17,7 +17,7 @@ public class Loja {
     private  Integer numeroCarros;
 
 
-    @OneToOne
+    @OneToOne(mappedBy = "loja", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private Endereco endereco;
 
     public long getId() {
