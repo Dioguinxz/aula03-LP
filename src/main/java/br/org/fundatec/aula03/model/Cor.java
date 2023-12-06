@@ -1,4 +1,4 @@
-package br.org.fundatec.aula03.Model;
+package br.org.fundatec.aula03.model;
 
 public enum Cor {
     AZUL,PRETO,BRANCO

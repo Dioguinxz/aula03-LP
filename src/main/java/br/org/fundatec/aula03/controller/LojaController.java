@@ -1,7 +1,9 @@
-package br.org.fundatec.aula03.Controller;
+package br.org.fundatec.aula03.controller;
 
-import br.org.fundatec.aula03.Model.Loja;
-import br.org.fundatec.aula03.Service.LojaService;
+import br.org.fundatec.aula03.controller.request.LojaRequest;
+import br.org.fundatec.aula03.controller.response.LojaResponse;
+import br.org.fundatec.aula03.model.Loja;
+import br.org.fundatec.aula03.service.LojaService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +19,7 @@ public class LojaController {
     }
 
     @PostMapping
-    public Loja create(@RequestBody Loja loja) {
+    public LojaResponse create(@RequestBody LojaRequest loja) {
     return lojaService.create(loja);
 
 

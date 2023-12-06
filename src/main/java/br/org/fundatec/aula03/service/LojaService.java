@@ -1,7 +1,7 @@
-package br.org.fundatec.aula03.Service;
+package br.org.fundatec.aula03.service;
 
-import br.org.fundatec.aula03.Model.Loja;
-import br.org.fundatec.aula03.Repository.LojaRepository;
+import br.org.fundatec.aula03.model.Loja;
+import br.org.fundatec.aula03.repository.LojaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

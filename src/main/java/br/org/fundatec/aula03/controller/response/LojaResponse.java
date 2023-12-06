@@ -1,32 +1,26 @@
-package br.org.fundatec.aula03.Model;
+package br.org.fundatec.aula03.controller.response;
 
-import jakarta.persistence.*;
+import br.org.fundatec.aula03.model.Endereco;
 
-@Entity
-public class Loja {
+public class LojaResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-    private long id;
-
-    @Column(length = 50, unique = true, nullable = false)
     private String nome;
 
-    @Column(nullable = false)
     private  Integer numeroCarros;
 
-
-    @OneToOne(mappedBy = "loja", cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
-    private Endereco endereco;
-
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
+
+    private Endereco endereco;
+
+
 
     public String getNome() {
         return nome;
@@ -51,6 +45,5 @@ public class Loja {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
-
 
 }
